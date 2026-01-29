@@ -4,9 +4,6 @@
 
 Proyek ini dibangun dengan antarmuka **Dark Mode / Cinematic** yang modern dan responsif.
 
-![Absolute Cinema Preview](frontend/assets/screenshot_home.jpg)
-*(Ganti path gambar di atas dengan screenshot aplikasi Anda)*
-
 ---
 
 ## ✨ Fitur Utama
