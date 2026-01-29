@@ -46,27 +46,4 @@ Proyek ini dibangun dengan antarmuka **Dark Mode / Cinematic** yang modern dan r
 | **API** | The Movie Database (TMDB) API |
 
 ---
-Absolute-Cinema/
-│
-├── backend/                  # SERVER SIDE
-│   ├── config/               # Koneksi Database (db.js)
-│   ├── controllers/          # Logika (Film, User, Review, Rating, TierList)
-│   ├── middleware/           # Auth Middleware (JWT check)
-│   ├── models/               # Query SQL
-│   ├── routes/               # Routing API endpoints
-│   ├── .env                  # Environment Variables (Gitignored)
-│   └── app.js                # Entry Point
-│
-├── frontend/                 # CLIENT SIDE
-│   ├── components/           # Navbar reusable (navbar.html)
-│   ├── js/                   # Logika JavaScript
-│   │   ├── api.js            # Fetch API Helper
-│   │   ├── auth.js           # Login/Register Logic
-│   │   ├── home.js           # Homepage Logic
-│   │   ├── film-detail.js    # Detail Film & Review Logic
-│   │   ├── tier-list-manage.js # Logic Ordering
-│   │   └── ...
-│   ├── *.html                # Halaman Web (index, login, detail, dll)
-│ 
-│
-└── README.md                 # Dokumentasi Proyek
+
