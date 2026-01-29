@@ -1,0 +1,86 @@
+<head>
+  <style>
+    .navbar-glass {
+      background-color: rgba(18, 18, 18, 0.85);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+      transition: all 0.3s ease;
+    }
+
+    .navbar-brand {
+      font-weight: 800;
+      letter-spacing: 1px;
+      font-size: 1.5rem;
+    }
+
+    .nav-link {
+      font-weight: 500;
+      transition: color 0.2s;
+      position: relative;
+    }
+
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      bottom: 5px;
+      left: 0;
+      background-color: #ffc107;
+      transition: width 0.3s;
+    }
+
+    .nav-link:hover::after,
+    .nav-link.active::after {
+      width: 100%;
+    }
+
+    .nav-link.active {
+      color: #fff !important;
+    }
+
+    .dropdown-menu-dark {
+      background-color: #1e1e1e;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .avatar-circle {
+      width: 32px;
+      height: 32px;
+      background-color: #ffc107;
+      color: #000;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-glass mb">
+  <div class="container">
+    <a class="navbar-brand text-white" href="index.html">
+      ABSOLUTE <span class="text-warning">CINEMA</span>
+    </a>
+
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarContent">
+
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+      </ul>
+
+      <ul class="navbar-nav ms-auto align-items-center" id="nav-auth">
+      </ul>
+
+    </div>
+  </div>
+</nav>

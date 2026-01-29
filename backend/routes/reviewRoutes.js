@@ -1,16 +1,14 @@
 const express = require('express');
 const router = express.Router();
-
-const authMiddleware = require('../middleware/authMiddleware');
 const reviewController = require('../controllers/reviewController');
+const authMiddleware = require('../middleware/authMiddleware');
 
-// add review (login required)
-router.post('/', authMiddleware, reviewController.addReview);
+router.post('/', authMiddleware, reviewController.upsertReview);
+router.put('/:id', authMiddleware, reviewController.upsertReview);
 
-// get reviews by film
-router.get('/film/:film_id', reviewController.getReviewsByFilm);
-
-// delete review (owner only)
+router.get('/film/:film_id', authMiddleware, reviewController.getReviewsByFilm);
+router.get('/user/:user_id', reviewController.getReviewsByUser);
+router.get('/:id', reviewController.getReviewById);
 router.delete('/:id', authMiddleware, reviewController.deleteReview);
 
 module.exports = router;
