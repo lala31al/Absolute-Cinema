@@ -2,7 +2,7 @@
 
 **Absolute Cinema** adalah platform web interaktif untuk pencarian film, manajemen koleksi, dan pembuatan peringkat film (Tier List). Aplikasi ini mengintegrasikan data real-time dari **TMDB API** dengan fitur personalisasi pengguna yang disimpan dalam database MySQL lokal.
 
-Proyek ini dibangun dengan antarmuka **Dark Mode / Cinematic** yang modern dan responsif.
+Proyek ini dibangun dengan antarmuka **Dark Mode / Cinematic** yang modern dan responsif, serta didukung oleh **Unit Testing** di sisi backend untuk memastikan kestabilan sistem.
 
 ---
 
@@ -24,7 +24,7 @@ Proyek ini dibangun dengan antarmuka **Dark Mode / Cinematic** yang modern dan r
   * **Custom Ordering:** Ubah posisi urutan film (Naik/Turun) dengan tombol interaktif.
 * **Watchlist:** Simpan film yang ingin ditonton nanti dengan satu klik.
 
-### 3. Ulasan & Komunitas
+### 3. lasan & Komunitas
 * **Rating & Review:** Berikan skor bintang (1-10) dan tulis ulasan untuk film.
 * **User Profile:** Lihat ulasan dan rating yang pernah dibuat.
 
@@ -43,7 +43,7 @@ Proyek ini dibangun dengan antarmuka **Dark Mode / Cinematic** yang modern dan r
 | **Backend** | **Node.js**, **Express.js** |
 | **Database** | **MySQL** (Relational Database) |
 | **Auth** | JSON Web Token (JWT) |
+| **Testing** | **Jest**, **Supertest** (Unit Testing) |
 | **API** | The Movie Database (TMDB) API |
 
 ---
-
